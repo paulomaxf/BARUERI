@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoboy Barueri - Entregas Rápidas e Urgentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            background-color: #0066cc; /* Azul no lugar do laranja */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-weight: bold;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://amzn.to/3TqKo9U'); /* Nova imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero h1 .subtitle {
+            font-size: 24px;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #0066cc; /* Azul no lugar do laranja */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s;
+            border: 2px solid #0066cc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: #0066cc;
+        }
+        
+        .services {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .service-content h3 {
+            color: #0066cc; /* Azul no lugar do laranja */
+            margin-top: 0;
+            font-size: 22px;
+        }
+        
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero h1 .subtitle {
+                font-size: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">MOTOBOY BARUERI</div>
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (11) 3136-1615</span>
+                    <span>PREÇO A PARTIR DE R$14</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>ENTREGAS RÁPIDAS E URGENTES<br><span class="subtitle">ORÇAMENTO SEM COMPROMISSO</span></h1>
+            <p>Soluções logísticas confiáveis para Barueri com agilidade e excelência</p>
+            <a href="https://wa.me/551131361615" class="cta-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> SOLICITAR ENTREGA
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="services">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px; color: #333;">NOSSOS SERVIÇOS</h2>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="https://ts2.mm.bing.net/th?id=OIP.1FPOvVxX2ephZPaOw2ZLEQHaE7&pid=15.1" alt="Motoboy em entrega" class="service-img">
+                    <div class="service-content">
+                        <h3>ENTREGAS EXPRESSAS</h3>
+                        <p>Documentos e encomendas entregues em até 1 hora na região de Barueri.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://bing.com/th/id/BCO.8c379612-8a89-433d-835a-220b6c240075.png" alt="Entrega corporativa" class="service-img">
+                    <div class="service-content">
+                        <h3>SERVIÇO CORPORATIVO</h3>
+                        <p>Atendimento especial para empresas com relatório de entregas.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://www.yumpu.com/en/image/facebook/62657147.jpg" alt="Edifícios em Barueri" class="service-img">
+                    <div class="service-content">
+                        <h3>ENTREGAS EM CONDOMÍNIOS</h3>
+                        <p>Acesso facilitado a todos os edifícios comerciais e residenciais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-phone"></i> (11) 3136-1615 | Atendimento 24 horas</p>
+            <p>&copy; 2023 Motoboy Barueri - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/551131361615" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
